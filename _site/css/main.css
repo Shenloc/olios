@@ -51,11 +51,13 @@ header {
   height: 50vh; }
   header h1 {
     font-size: 180px;
+    font-size: 16vw;
     font-weight: 100;
     text-transform: uppercase;
     margin-top: 100px; }
   header .bg-text {
     font-size: 280px;
+    font-size: 20vw;
     font-weight: 700;
     color: #e7e7e7;
     text-transform: uppercase;
@@ -67,6 +69,7 @@ header {
     z-index: -1; }
   header p {
     font-size: 36px;
+    font-size: 3vw;
     font-weight: 100;
     color: black;
     text-transform: uppercase;
@@ -87,7 +90,48 @@ header {
 .slider {
   text-align: center;
   margin-top: 100px; }
+  @media screen and (max-width: 600px) {
+    .slider {
+      margin-top: 0; } }
   .slider img {
     width: 100%;
     display: block;
     height: auto; }
+
+nav {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  height: 100vh;
+  width: 50px;
+  background-color: #fff;
+  box-shadow: 1px 0 2px #B9B9B9;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
+  nav .home-icon, nav .basket-icon, nav .search-icon, nav .download-icon {
+    background-image: url("../img/icons/home.png");
+    background-size: cover;
+    width: 30px;
+    height: 30px;
+    display: block;
+    margin: 0 10px 30px;
+    transition: 0.6s ease; }
+    nav .home-icon:hover, nav .basket-icon:hover, nav .search-icon:hover, nav .download-icon:hover {
+      background-image: url("../img/icons/home-a.png"); }
+  nav .basket-icon {
+    background-image: url("../img/icons/basket.png"); }
+    nav .basket-icon:hover {
+      background-image: url("../img/icons/basket-a.png"); }
+  nav .search-icon {
+    background-image: url("../img/icons/search.png"); }
+    nav .search-icon:hover {
+      background-image: url("../img/icons/search-a.png"); }
+  nav .download-icon {
+    background-image: url("../img/icons/in.png"); }
+    nav .download-icon:hover {
+      background-image: url("../img/icons/in-a.png"); }
+  nav img {
+    width: 30px;
+    height: 30px;
+    margin: 10px 10px 60px; }
