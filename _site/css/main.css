@@ -39,4 +39,55 @@ table {
   border-spacing: 0; }
 
 body {
-  background-color: pink; }
+  background-image: url("../img/bg.jpg");
+  background-repeat: repeat;
+  font-family: "Lato", sans-serif; }
+  body h1, body h2, body h3, body h4, body h5, body h6 {
+    color: black; }
+
+header {
+  text-align: center;
+  position: relative;
+  height: 50vh; }
+  header h1 {
+    font-size: 180px;
+    font-weight: 100;
+    text-transform: uppercase;
+    margin-top: 100px; }
+  header .bg-text {
+    font-size: 280px;
+    font-weight: 700;
+    color: #e7e7e7;
+    text-transform: uppercase;
+    margin-top: -98px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1; }
+  header p {
+    font-size: 36px;
+    font-weight: 100;
+    color: black;
+    text-transform: uppercase;
+    margin-bottom: 40px; }
+  header .cta {
+    color: #fff;
+    background-color: #0023ff;
+    padding: 10px 40px;
+    border: 1px solid #0023ff;
+    border-radius: 25px;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: 0.5s ease-in-out; }
+    header .cta:hover {
+      background-color: transparent;
+      color: #0023ff; }
+
+.slider {
+  text-align: center;
+  margin-top: 100px; }
+  .slider img {
+    width: 100%;
+    display: block;
+    height: auto; }
