@@ -98,18 +98,18 @@ header {
     display: block;
     height: auto; }
 
-nav {
+.navbar {
   position: fixed;
   z-index: 1;
   top: 0;
   height: 100vh;
   width: 50px;
   background-color: #fff;
-  box-shadow: 1px 0 2px #B9B9B9;
+  box-shadow: 1px 0 5px #B9B9B9;
   display: flex;
   flex-direction: column;
   justify-content: space-between; }
-  nav .home-icon, nav .basket-icon, nav .search-icon, nav .download-icon {
+  .navbar .home-icon, .navbar .basket-icon, .navbar .search-icon, .navbar .download-icon {
     background-image: url("../img/icons/home.png");
     background-size: cover;
     width: 30px;
@@ -117,21 +117,54 @@ nav {
     display: block;
     margin: 0 10px 30px;
     transition: 0.6s ease; }
-    nav .home-icon:hover, nav .basket-icon:hover, nav .search-icon:hover, nav .download-icon:hover {
+    .navbar .home-icon:hover, .navbar .basket-icon:hover, .navbar .search-icon:hover, .navbar .download-icon:hover {
       background-image: url("../img/icons/home-a.png"); }
-  nav .basket-icon {
+  .navbar .basket-icon {
     background-image: url("../img/icons/basket.png"); }
-    nav .basket-icon:hover {
+    .navbar .basket-icon:hover {
       background-image: url("../img/icons/basket-a.png"); }
-  nav .search-icon {
+  .navbar .search-icon {
     background-image: url("../img/icons/search.png"); }
-    nav .search-icon:hover {
+    .navbar .search-icon:hover {
       background-image: url("../img/icons/search-a.png"); }
-  nav .download-icon {
+  .navbar .download-icon {
     background-image: url("../img/icons/in.png"); }
-    nav .download-icon:hover {
+    .navbar .download-icon:hover {
       background-image: url("../img/icons/in-a.png"); }
-  nav img {
+  .navbar img {
     width: 30px;
     height: 30px;
     margin: 10px 10px 60px; }
+
+#menu {
+  position: relative;
+  top: 50px;
+  left: 50px;
+  width: 15px;
+  height: 12px; }
+  #menu:hover {
+    cursor: pointer; }
+  #menu span {
+    position: absolute;
+    height: 2px;
+    width: 15px;
+    background: black;
+    margin-bottom: 5px; }
+    #menu span:last-of-type {
+      margin-bottom: 0; }
+  #menu .top {
+    top: 0; }
+  #menu .center {
+    top: 50%;
+    transform: translateY(-50%); }
+  #menu .bottom {
+    bottom: 0; }
+
+#sidenav {
+  width: 200px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #fff;
+  display: none; }

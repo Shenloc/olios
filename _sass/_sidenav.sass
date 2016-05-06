@@ -1,0 +1,33 @@
+#menu
+  position: relative
+  top: 50px
+  left: 50px
+  width: 15px
+  height: 12px
+  &:hover
+    cursor: pointer
+  span
+    position: absolute
+    height: 2px
+    width: 15px
+    background: black
+    margin-bottom: 5px
+    &:last-of-type
+      margin-bottom: 0
+  .top
+    top: 0
+  .center
+    top: 50%
+    transform: translateY(-50%)
+  .bottom
+    bottom: 0
+
+
+#sidenav
+  width: 200px
+  position: fixed
+  top: 0
+  right: 0
+  bottom: 0
+  background-color: #fff
+  display: none
