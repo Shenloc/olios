@@ -1,33 +1,72 @@
 #menu
-  position: relative
+  position: fixed
   top: 50px
-  left: 50px
-  width: 15px
+  right: 50px
+  width: 12px
   height: 12px
+  padding: 15px
+  background-color: #fff
+  border-radius: 50%
+  box-shadow: 0px 0px 10px #D4D4D4
+  z-index: 2
   &:hover
     cursor: pointer
   span
     position: absolute
     height: 2px
-    width: 15px
+    width: 12px
     background: black
     margin-bottom: 5px
     &:last-of-type
       margin-bottom: 0
   .top
-    top: 0
+    top: 15px
   .center
     top: 50%
     transform: translateY(-50%)
   .bottom
-    bottom: 0
+    bottom: 15px
 
+.active-menu
+  transform: translateX(0)
 
-#sidenav
+aside
   width: 200px
   position: fixed
   top: 0
   right: 0
   bottom: 0
+  z-index: 1
   background-color: #fff
-  display: none
+  box-shadow: -1px 0 5px #B9B9B9
+  text-align: center
+  transition: .5s ease
+  transform: translateX(100%)
+  #sidenav
+    transform: translateY(65%)
+    padding: 0 21px
+    a
+      color: $gray
+      text-align: right
+      display: block
+      margin-bottom: 40px
+      &:last-of-type
+        margin-bottom: 0
+      img
+        vertical-align: middle
+        margin-left: 20px
+        width: 15%
+  .categories
+    position: absolute
+    bottom: 30px
+    left: 20px
+    color: $gray
+    display: inline-block
+    border-bottom: 1px solid transparent
+    width: 0px
+    transition: 0.5s ease-in-out
+    white-space: nowrap
+    &:hover
+      border-bottom: 1px solid $accent
+      width: 157px
+      color: $accent
