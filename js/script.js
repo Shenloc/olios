@@ -58,3 +58,11 @@ $('#search-modal-btn').on('click', function() {
     $('#search-modal-btn').css('background-image', 'url("img/icons/search.png")');
   }
 });
+
+function clear() {
+  var clear = document.getElementById('button');
+  var input = document.getElementById('input');
+  clear.onclick = function() {
+    input.target.value = '';
+  }
+}

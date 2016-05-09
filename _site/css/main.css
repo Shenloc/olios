@@ -282,3 +282,16 @@ aside {
     color: #c1c1c1;
     width: 70%;
     margin: 0 auto; }
+  .active-modal button {
+    font-size: 12vh;
+    background: none;
+    border: none;
+    color: #c1c1c1;
+    position: absolute;
+    top: 170px;
+    right: 100px;
+    transition: 0.5s ease-in-out; }
+    .active-modal button:focus {
+      outline: none; }
+    .active-modal button:hover {
+      color: #777; }
