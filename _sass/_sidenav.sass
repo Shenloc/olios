@@ -49,13 +49,24 @@ aside
       color: $gray
       text-align: right
       display: block
+      position: relative
       margin-bottom: 40px
       &:last-of-type
         margin-bottom: 0
+      &:hover
+        color: $accent
+      &:hover .hover-icon
+        opacity: 1
       img
         vertical-align: middle
         margin-left: 20px
         width: 15%
+      .hover-icon
+        position: absolute
+        top: 0
+        right: 0
+        opacity: 0
+        transition: .5s ease-in-out
   .categories
     position: absolute
     bottom: 30px

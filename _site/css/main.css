@@ -51,12 +51,13 @@ body {
   body a {
     transition: 0.5s ease;
     text-transform: uppercase;
-    text-decoration: none; }
+    text-decoration: none !important; }
 
 header {
   text-align: center;
   position: relative;
-  height: 50vh; }
+  height: 50vh;
+  margin-left: 50px; }
   header h1 {
     font-size: 180px;
     font-size: 16vw;
@@ -94,14 +95,33 @@ header {
 
 .slider {
   text-align: center;
-  margin-top: 100px; }
+  margin: 100px 0 0 50px; }
   @media screen and (max-width: 600px) {
     .slider {
       margin-top: 0; } }
-  .slider img {
-    width: 100%;
-    display: block;
-    height: auto; }
+  .slider .carousel-indicators {
+    position: absolute;
+    bottom: 10px;
+    right: 50px;
+    z-index: 15;
+    width: 8%;
+    margin-left: 0;
+    padding-left: 0;
+    list-style: none;
+    text-align: center; }
+    @media (max-width: 630px) {
+      .slider .carousel-indicators {
+        display: none; } }
+    .slider .carousel-indicators li {
+      border: 2px solid #c1c1c1;
+      background-color: transparent;
+      width: 5px;
+      height: 5px; }
+    .slider .carousel-indicators .active {
+      background-color: #0023ff;
+      border: 2px solid #0023ff;
+      width: 5px;
+      height: 5px; }
 
 .navbar {
   position: fixed;
@@ -192,13 +212,24 @@ aside {
       color: #c1c1c1;
       text-align: right;
       display: block;
+      position: relative;
       margin-bottom: 40px; }
       aside #sidenav a:last-of-type {
         margin-bottom: 0; }
+      aside #sidenav a:hover {
+        color: #0023ff; }
+      aside #sidenav a:hover .hover-icon {
+        opacity: 1; }
       aside #sidenav a img {
         vertical-align: middle;
         margin-left: 20px;
         width: 15%; }
+      aside #sidenav a .hover-icon {
+        position: absolute;
+        top: 0;
+        right: 0;
+        opacity: 0;
+        transition: 0.5s ease-in-out; }
   aside .categories {
     position: absolute;
     bottom: 30px;

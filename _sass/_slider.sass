@@ -1,10 +1,30 @@
 .slider
   text-align: center
-  margin-top: 100px
+  margin: 100px 0 0 50px
   @media screen and (max-width: 600px)
     margin-top: 0
 
-  img
-    width: 100%
-    display: block
-    height: auto
+  .carousel-indicators
+    position: absolute
+    bottom: 10px
+    right: 50px
+    z-index: 15
+    width: 8%
+    margin-left: 0
+    padding-left: 0
+    list-style: none
+    text-align: center
+    @media (max-width: 630px)
+      display: none
+
+    li
+      border: 2px solid $gray
+      background-color: transparent
+      width: 5px
+      height: 5px
+
+    .active
+      background-color: $accent
+      border: 2px solid $accent
+      width: 5px
+      height: 5px

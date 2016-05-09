@@ -7,6 +7,8 @@
 
   <title>Olios | Furniture shop</title>
 
+
+  <link rel="stylesheet" href="/olios/css/bootstrap.css">
   <link rel="stylesheet" href="/olios/css/main.css">
 
   <link href='https://fonts.googleapis.com/css?family=Lato:400,100,300,900' rel='stylesheet' type='text/css'>
@@ -32,18 +34,33 @@
 
 <aside>
   <nav id="sidenav">
-    <a class="living-room-icon" href="#">living room<img src="img/icons/living-room.png"></a>
-    <a class="living-room-icon" href="#">office<img src="img/icons/office.png"></a>
-    <a class="living-room-icon" href="#">for kids<img src="img/icons/kids.png"></a>
-    <a class="living-room-icon" href="#">kitchen<img src="img/icons/kitchen.png"></a>
-    <a class="living-room-icon" href="#">accesories<img src="img/icons/acc.png"></a>
+    <a class="living-room-icon" href="#">living room
+      <img src="img/icons/living-room.png">
+      <img class="hover-icon" src="img/icons/living-room-a.png">
+    </a>
+    <a class="living-room-icon" href="#">office
+      <img src="img/icons/office.png">
+      <img class="hover-icon" src="img/icons/office-a.png">
+    </a>
+    <a class="living-room-icon" href="#">for kids
+      <img src="img/icons/kids.png">
+      <img class="hover-icon" src="img/icons/kids-a.png">
+    </a>
+    <a class="living-room-icon" href="#">kitchen
+      <img src="img/icons/kitchen.png">
+      <img class="hover-icon" src="img/icons/kitchen-a.png">
+    </a>
+    <a class="living-room-icon" href="#">accesories
+      <img src="img/icons/acc.png">
+      <img class="hover-icon" src="img/icons/acc-a.png">
+    </a>
   </nav>
 
 
 <a href="#" class="categories">show all categories</a>
 </aside>
 
-    
+
     <header>
   <p class="bg-text">newest</p>
   <h1>olios</h1>
@@ -52,10 +69,36 @@
 </header>
 
     <div class="slider">
-  <img src="img/slider/f0.jpg" alt="olios - baner">
+  <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+      <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+      <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+      <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <img src="img/slider/f0.jpg" alt="home-slide">
+      </div>
+      <div class="item">
+        <img src="img/slider/f3.png" alt="2nd-slide">
+      </div>
+      <div class="item">
+        <img src="img/slider/f2.png" alt="3rd-slide">
+      </div>
+      <div class="item">
+        <img src="img/slider/f5.png" alt="4th-slide">
+      </div>
+    </div>
+  </div>
 </div>
 
 
     <script src="js/script.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    </script>
   </body>
 </html>

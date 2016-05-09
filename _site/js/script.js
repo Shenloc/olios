@@ -1,32 +1,24 @@
 window.onload = init;
 function init() {
 
-  //menuToggle();
-
 }
-
-
-//    MENU TOGGLE
-/*
-function menuToggle() {
-  var menu = document.getElementById('menu')
-      sidenav = document.getElementsByTagName('aside');
-
-  menu.onclick = menuOpen;
-
-  function menuOpen() {
-    for (i = 0; i < sidenav.length; i++) {
-      sidenav[i].classList.toggle('active-menu');
-    }
-    $('#sidenav a').on('click', function() {
-      $('aside').css('transform', 'translateX(100%)');
-    });
-
-  }
-}
-*/
 
 //    MENU TOGGLE - JQUERY
+function rotate() {
+  $('.top').css({
+    transform: 'translateY(0) rotate(0deg)',
+    transition: '.5s ease'
+  });
+  $('.bottom').css({
+    transform: 'translateY(0) rotate(0deg)',
+    transition: '.5s ease'
+  });
+  $('.center').css({
+    opacity: '1',
+    transition: '.5s ease'
+  });
+}
+
 $('#menu').on('click', function(){
   $('aside').toggleClass('active-menu');
     if ($('aside').hasClass('active-menu')) {
@@ -43,39 +35,15 @@ $('#menu').on('click', function(){
         transition: '.5s ease'
       });
     } else {
-      $('.top').css({
-        transform: 'translateY(0) rotate(0deg)',
-        transition: '.5s ease'
-      });
-      $('.bottom').css({
-        transform: 'translateY(0) rotate(0deg)',
-        transition: '.5s ease'
-      });
-      $('.center').css({
-        opacity: '1',
-        transition: '.5s ease'
-      });
+      rotate();
     }
   $('aside a').on('click', function() {
     if ($('aside').hasClass('active-menu')) {
       $('aside').removeClass('active-menu');
     } else {
-      $('.top').css({
-        transform: 'translateY(0) rotate(0deg)',
-        transition: '.5s ease'
-      });
-      $('.bottom').css({
-        transform: 'translateY(0) rotate(0deg)',
-        transition: '.5s ease'
-      });
-      $('.center').css({
-        opacity: '1',
-        transition: '.5s ease'
-      });
+      rotate();
     }
   });
 });
 
-$('#sidenav a').on('click', function() {
-  $(this).css('color', 'blue');
-});
+//    MAIN SLIDER
