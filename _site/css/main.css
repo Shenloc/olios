@@ -171,7 +171,7 @@ header {
   background-color: #fff;
   border-radius: 50%;
   box-shadow: 0px 0px 10px #D4D4D4;
-  z-index: 2; }
+  z-index: 3; }
   #menu:hover {
     cursor: pointer; }
   #menu span {
@@ -199,7 +199,7 @@ aside {
   top: 0;
   right: 0;
   bottom: 0;
-  z-index: 1;
+  z-index: 2;
   background-color: #fff;
   box-shadow: -1px 0 5px #B9B9B9;
   text-align: center;
