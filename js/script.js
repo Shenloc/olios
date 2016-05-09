@@ -46,4 +46,15 @@ $('#menu').on('click', function(){
   });
 });
 
-//    MAIN SLIDER
+//    SEARCH-MODAL
+$('#search-modal-btn').on('click', function() {
+  $('#modal').toggleClass('active-modal');
+  if ($('#modal').hasClass('active-modal')) {
+    $('h1').css('opacity', '0');
+    $('#search-modal-btn').css('background-image', 'url("img/icons/search-a.png")');
+  } else {
+    $('h1').css('opacity', '1');
+    $('#search-modal-btn').css('color', '$gray');
+    $('#search-modal-btn').css('background-image', 'url("img/icons/search.png")');
+  }
+});

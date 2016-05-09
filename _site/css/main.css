@@ -45,7 +45,8 @@ body {
   background-image: url("../img/bg.jpg");
   background-repeat: repeat;
   font-family: "Lato", sans-serif;
-  font-size: 14px; }
+  font-size: 14px;
+  position: relative; }
   body h1, body h2, body h3, body h4, body h5, body h6 {
     color: black; }
   body a {
@@ -127,7 +128,7 @@ header {
   position: fixed;
   z-index: 1;
   top: 0;
-  height: 100vh;
+  bottom: 0;
   width: 50px;
   background-color: #fff;
   box-shadow: 1px 0 5px #B9B9B9;
@@ -171,7 +172,7 @@ header {
   background-color: #fff;
   border-radius: 50%;
   box-shadow: 0px 0px 10px #D4D4D4;
-  z-index: 3; }
+  z-index: 4; }
   #menu:hover {
     cursor: pointer; }
   #menu span {
@@ -199,7 +200,7 @@ aside {
   top: 0;
   right: 0;
   bottom: 0;
-  z-index: 2;
+  z-index: 3;
   background-color: #fff;
   box-shadow: -1px 0 5px #B9B9B9;
   text-align: center;
@@ -244,3 +245,39 @@ aside {
       border-bottom: 1px solid #0023ff;
       width: 157px;
       color: #0023ff; }
+
+#modal {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+  margin: -100px 0 0 50px;
+  background-color: rgba(255, 255, 255, 0.9);
+  transition: 0.5s ease-in-out;
+  transform: translateY(-100%); }
+
+.active-modal {
+  transform: translateY(0) !important; }
+  .active-modal input {
+    width: 70%;
+    height: 200px;
+    display: block;
+    margin: 100px auto 0;
+    font-size: 10vw;
+    font-weight: 300;
+    background: transparent;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px solid #c1c1c1;
+    outline: none;
+    transition: 0.5s ease-in-out; }
+    .active-modal input:focus {
+      border-bottom-color: #0023ff; }
+  .active-modal p {
+    font-size: 2vw;
+    color: #c1c1c1;
+    width: 70%;
+    margin: 0 auto; }

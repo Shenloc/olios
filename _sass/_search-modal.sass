@@ -1,0 +1,37 @@
+#modal
+  position: absolute
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
+  z-index: 2
+  margin: -100px 0 0 50px
+  background-color: rgba(255, 255, 255, .9)
+  transition: .5s ease-in-out
+  transform: translateY(-100%)
+.active-modal
+  transform: translateY(0) !important
+
+  input
+    width: 70%
+    height: 200px
+    display: block
+    margin: 100px auto 0
+    font:
+      size: 10vw
+      weight: 300
+    background: transparent
+    border-top: none
+    border-left: none
+    border-right: none
+    border-bottom: 2px solid $gray
+    outline: none
+    transition: .5s ease-in-out
+    &:focus
+      border-bottom-color: $accent
+
+  p
+    font-size: 2vw
+    color: $gray
+    width: 70%
+    margin: 0 auto
