@@ -13,46 +13,49 @@
 .active-modal
   transform: translateY(0) !important
 
-  input
-    width: 70%
-    display: block
-    margin: 100px auto 0
-    font:
-      size: 10vw
-      weight: 300
-    background: transparent
-    border-top: none
-    border-left: none
-    border-right: none
-    border-bottom: 2px solid $gray
-    outline: none
-    transition: .5s ease-in-out
-    &:focus
-      border-bottom-color: $accent
-    &::after
-      content: 'x'
+  .modal-input
+    display: flex
+    justify-content: space-around
+    margin-top: 100px
+
+    input
+      width: 70%
+      display: inline-block
+      font:
+        size: 10vw
+        weight: 300
+      background: transparent
+      border-top: none
+      border-left: none
+      border-right: none
+      border-bottom: 2px solid $gray
+      outline: none
+      transition: .5s ease-in-out
+      &:focus
+        border-bottom-color: $accent
+      &::after
+        content: 'x'
+
+    #button
+      font:
+        size: 12vh
+        weight: 100
+      line-height: 2.1
+      color: $gray
+      display: inline-block
+      transition: .5s ease-in-out
+      @media (max-width: 800px)
+        font-size: 5em
+
+      &:focus
+        outline: none
+      &:hover
+        color: black
+      &::after
+        content: 'x'
 
   p
     font-size: 2vw
     color: $gray
     width: 70%
     margin: 0 auto
-
-  #button
-    font:
-      size: 12vh
-      weight: 100
-    color: $gray
-    position: absolute
-    top: 120px
-    right: 100px
-    transition: .5s ease-in-out
-    @media (max-width: 800px)
-      font-size: 5em
-
-    &:focus
-      outline: none
-    &:hover
-      color: black
-    &::after
-      content: 'x'

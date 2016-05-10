@@ -261,42 +261,44 @@ aside {
 
 .active-modal {
   transform: translateY(0) !important; }
-  .active-modal input {
-    width: 70%;
-    display: block;
-    margin: 100px auto 0;
-    font-size: 10vw;
-    font-weight: 300;
-    background: transparent;
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    border-bottom: 2px solid #c1c1c1;
-    outline: none;
-    transition: 0.5s ease-in-out; }
-    .active-modal input:focus {
-      border-bottom-color: #0023ff; }
-    .active-modal input::after {
-      content: "x"; }
+  .active-modal .modal-input {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 100px; }
+    .active-modal .modal-input input {
+      width: 70%;
+      display: inline-block;
+      font-size: 10vw;
+      font-weight: 300;
+      background: transparent;
+      border-top: none;
+      border-left: none;
+      border-right: none;
+      border-bottom: 2px solid #c1c1c1;
+      outline: none;
+      transition: 0.5s ease-in-out; }
+      .active-modal .modal-input input:focus {
+        border-bottom-color: #0023ff; }
+      .active-modal .modal-input input::after {
+        content: "x"; }
+    .active-modal .modal-input #button {
+      font-size: 12vh;
+      font-weight: 100;
+      line-height: 2.1;
+      color: #c1c1c1;
+      display: inline-block;
+      transition: 0.5s ease-in-out; }
+      @media (max-width: 800px) {
+        .active-modal .modal-input #button {
+          font-size: 5em; } }
+      .active-modal .modal-input #button:focus {
+        outline: none; }
+      .active-modal .modal-input #button:hover {
+        color: black; }
+      .active-modal .modal-input #button::after {
+        content: "x"; }
   .active-modal p {
     font-size: 2vw;
     color: #c1c1c1;
     width: 70%;
     margin: 0 auto; }
-  .active-modal #button {
-    font-size: 12vh;
-    font-weight: 100;
-    color: #c1c1c1;
-    position: absolute;
-    top: 120px;
-    right: 100px;
-    transition: 0.5s ease-in-out; }
-    @media (max-width: 800px) {
-      .active-modal #button {
-        font-size: 5em; } }
-    .active-modal #button:focus {
-      outline: none; }
-    .active-modal #button:hover {
-      color: black; }
-    .active-modal #button::after {
-      content: "x"; }
