@@ -37,10 +37,10 @@
     width: 70%
     margin: 0 auto
 
-  button
-    font-size: 12vh
-    background: none
-    border: none
+  #button
+    font:
+      size: 12vh
+      weight: 100
     color: $gray
     position: absolute
     top: 170px
@@ -49,4 +49,7 @@
     &:focus
       outline: none
     &:hover
-      color: #777
+      color: black
+
+    &::after
+      content: 'x'

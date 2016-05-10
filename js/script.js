@@ -59,10 +59,14 @@ $('#search-modal-btn').on('click', function() {
   }
 });
 
-function clear() {
+$('#button').on('click', function() {
+  $('input').val('');
+});
+
+/*function clear() {
   var clear = document.getElementById('button');
   var input = document.getElementById('input');
   clear.onclick = function() {
     input.target.value = '';
   }
-}
+}*/
