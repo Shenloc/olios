@@ -15,7 +15,6 @@
 
   input
     width: 70%
-    height: 200px
     display: block
     margin: 100px auto 0
     font:
@@ -30,6 +29,8 @@
     transition: .5s ease-in-out
     &:focus
       border-bottom-color: $accent
+    &::after
+      content: 'x'
 
   p
     font-size: 2vw
@@ -43,13 +44,15 @@
       weight: 100
     color: $gray
     position: absolute
-    top: 170px
+    top: 120px
     right: 100px
     transition: .5s ease-in-out
+    @media (max-width: 800px)
+      font-size: 5em
+
     &:focus
       outline: none
     &:hover
       color: black
-
     &::after
       content: 'x'
