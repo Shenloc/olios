@@ -49,6 +49,8 @@ body {
   position: relative; }
   body h1, body h2, body h3, body h4, body h5, body h6 {
     color: black; }
+  body p {
+    color: #c1c1c1; }
   body a {
     transition: 0.5s ease;
     text-transform: uppercase;
@@ -302,3 +304,59 @@ aside {
     color: #c1c1c1;
     width: 70%;
     margin: 0 auto; }
+
+section {
+  margin-left: 50px;
+  padding: 50px 200px 100px 150px; }
+  section .prod-head {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 17px; }
+    section .prod-head h1 {
+      font-size: 60px;
+      font-weight: 300;
+      text-transform: uppercase; }
+    section .prod-head p {
+      display: inline;
+      color: #c1c1c1;
+      margin-right: 20px;
+      text-transform: uppercase; }
+    section .prod-head img {
+      vertical-align: middle;
+      width: 40px;
+      height: 40px; }
+  section .gallery {
+    margin-top: 50px; }
+    section .gallery img {
+      width: 100%;
+      height: auto;
+      display: block; }
+    section .gallery .row {
+      display: flex;
+      margin-bottom: 20px; }
+      section .gallery .row .product-lg {
+        display: flex;
+        height: 390px; }
+      section .gallery .row .product {
+        display: block;
+        width: 265px;
+        margin-right: 20px; }
+      section .gallery .row .prod-info-bottom {
+        background-color: #fff;
+        margin-top: -3px;
+        padding: 30px; }
+      section .gallery .row .prod-info-side {
+        background-color: #fff;
+        margin-left: -3px;
+        padding: 30px;
+        min-width: 550px; }
+      section .gallery .row h3 {
+        text-transform: uppercase;
+        font-size: 30px;
+        font-weight: 300; }
+      section .gallery .row p {
+        text-transform: none; }
+      section .gallery .row .price {
+        color: #0023ff;
+        font-weight: bold;
+        margin-top: 20px; }
