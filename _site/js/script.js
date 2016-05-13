@@ -23,11 +23,11 @@ $('#menu').on('click', function(){
   $('aside').toggleClass('active-menu');
     if ($('aside').hasClass('active-menu')) {
       $('.top').css({
-        transform: 'translateY(5px) rotate(45deg)',
+        transform: 'translateY(4px) rotate(45deg)',
         transition: '.5s ease'
       });
       $('.bottom').css({
-        transform: 'translateY(-5px) rotate(-45deg)',
+        transform: 'translateY(-4px) rotate(-45deg)',
         transition: '.5s ease'
       });
       $('.center').css({
@@ -63,10 +63,10 @@ $('#button').on('click', function() {
   $('input').val('');
 });
 
-/*function clear() {
-  var clear = document.getElementById('button');
-  var input = document.getElementById('input');
-  clear.onclick = function() {
-    input.target.value = '';
-  }
-}*/
+
+//    MORE PRODUCTS
+$('.more').on('click', function(e){
+  e.preventDefault();
+  $(this).fadeOut(100);
+  $('.read-more').fadeIn(500);
+});
