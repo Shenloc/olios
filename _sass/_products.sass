@@ -22,12 +22,11 @@ section
       visibility: visible
       width: 100%
 
-  .read-more
-    display: none
-
   .prod-head
     display: flex
     justify-content: space-between
+    @media (max-width: 570px)
+      flex-direction: column
 
     span
       padding-top: 17px
@@ -83,11 +82,6 @@ section
         font-weight: bold
         margin-top: 20px
 
-      //.row
-        display: flex
-        margin-bottom: 20px
-        height: 435px
-
       .product
         display: block
         text-align: left
@@ -124,3 +118,8 @@ section
         padding: 30px
         @media (max-width: 720px)
           text-align: center
+
+  .read-more
+    display: none
+    @media (max-width: 720px)
+      display: none

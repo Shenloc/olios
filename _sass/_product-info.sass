@@ -1,0 +1,197 @@
+.product-view
+  display: flex
+  @media (max-width: 650px)
+    flex-direction: column
+
+  .product-photo
+    position: fixed
+    background-color: #fff
+    height: 100vh
+    width: 40%
+    margin-left: 50px
+    padding: 100px 70px
+    box-shadow: 3px 0 5px $gray
+    overflow: hidden
+    @media (max-width: 650px)
+      position: relative
+      width: 100%
+      margin-left: 0
+      padding-left: 50px
+    img
+      width: 100%
+      height: auto
+      display: block
+    .like
+      position: absolute
+      top: 20px
+      right: 20px
+      display: flex
+      p
+        margin-right: 10px
+        line-height: 2
+      span
+        position: relative
+        img
+          cursor: pointer
+        #liked
+          position: absolute
+          top: 0
+          visibility: hidden
+    .photo-zoom
+      position: absolute
+      bottom: 20px
+      left: 20px
+      display: flex
+      @media (max-width: 650px)
+        left: 70px
+      img
+        margin-right: 10px
+        cursor: pointer
+        height: 32px
+
+  .product-desc
+    width: 60%
+    margin-left: 43.7%
+    @media (max-width: 650px)
+      margin-left: 0
+      width: 100%
+      padding-left: 50px
+
+    .prod
+      margin: 50px 0 100px
+
+      .prod-head
+        padding: 50px
+        display: flex
+        justify-content: space-between
+        @media (max-width: 900px)
+          flex-direction: column
+
+        h1
+          font:
+            size: 30px
+            weight: 300
+          text-transform: uppercase
+
+        span
+          padding-top: 5px
+          display: flex
+          transform: translateX(-50%)
+          @media (max-width: 900px)
+            transform: translateX(0)
+          p
+            display: inline
+            line-height: 2.3
+            color: $gray
+            margin-right: 20px
+            text-transform: uppercase
+          img
+            vertical-align: middle
+            width: 30px
+            height: 30px
+
+      .prod-body
+        padding: 50px
+        h1
+          color: $accent
+          text-transform: uppercase
+          display: inline
+          font:
+            size: 60px
+            weight: 300
+          &:last-of-type
+            color: black
+
+        .prod-options
+          display: flex
+          justify-content: space-between
+          text-transform: uppercase
+          margin-top: 50px
+          @media (max-width: 650px)
+            display: block
+
+          .cost
+            p
+              &:nth-of-type(2)
+                display: inline
+                color: $accent
+                font:
+                  size: 35px
+                  weight: 700
+              &:last-of-type
+                display: inline
+                text-decoration: line-through
+                color: black
+                vertical-align: super
+                margin-left: 10px
+                font-weight: 700
+
+          .qty
+            @media (max-width: 650px)
+              margin: 20px 0 10px
+            input
+              padding: 0px 30px
+              height: 35px
+              border: 1px solid $gray
+              border-radius: 25px
+              width: 60px
+              padding: 10px
+              margin-top: 5px
+              &:focus
+                outline: none
+
+          button
+            color: #fff
+            background-color: $accent
+            padding: 0px 30px
+            margin-top: 22px
+            height: 35px
+            border: 1px solid $accent
+            border-radius: 25px
+            text-transform: uppercase
+            transition: .5s ease-in-out
+            &:hover
+              background-color: transparent
+              color: $accent
+
+    .recommended
+      display: flex
+      background-color: #fff
+      @media (max-width: 900px)
+        flex-direction: column
+      .vertical
+        text-transform: uppercase
+        transform: rotateZ(-90deg) translate(-100%, 45%)
+        height: 111px
+        font-size: 16px
+        @media (max-width: 900px)
+          transform: rotateZ(0) translate(0, 0)
+          display: inline
+          text-align: center
+          padding: 30px
+      .showcase
+        display: flex
+        justify-content: space-around
+        @media (max-width: 900px)
+          flex-direction: column
+        .rec-item
+          width: 30%
+          @media (max-width: 900px)
+            width: 100%
+            text-align: center
+            border-bottom: 1px solid $gray
+          img
+            width: 100%
+            @media (max-width: 900px)
+              width: 50%
+          .prod-info-bottom
+            background-color: #fff
+            margin-top: -3px
+            padding: 30px
+            @media (max-width: 720px)
+              text-align: center
+            h3
+              text-transform: uppercase
+              font:
+                size: 20px
+                weight: 300

@@ -70,3 +70,19 @@ $('.more').on('click', function(e){
   $(this).fadeOut(100);
   $('.read-more').fadeIn(500);
 });
+
+
+//    PRODUCT
+$('#plus').on('click', function(){
+  $('#product-image').css('transform', 'scale(2)');
+});
+$('#minus').on('click', function(){
+  $('#product-image').css('transform', 'scale(1)');
+});
+
+$('#like').on('click', function(){
+  $('#liked').css('visibility', 'visible');
+})
+$('#liked').on('click', function(){
+  $('#liked').css('visibility', 'hidden');
+})
