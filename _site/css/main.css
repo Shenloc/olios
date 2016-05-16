@@ -450,9 +450,9 @@ section {
       height: auto;
       display: block; }
     .product-view .product-photo .like {
-      position: fixed;
+      position: absolute;
       top: 20px;
-      left: 505px;
+      right: 20px;
       display: flex; }
       .product-view .product-photo .like p {
         margin-right: 10px;
@@ -466,9 +466,9 @@ section {
           top: 0;
           visibility: hidden; }
     .product-view .product-photo .photo-zoom {
-      position: fixed;
+      position: absolute;
       bottom: 20px;
-      left: 70px;
+      left: 20px;
       display: flex; }
       @media (max-width: 770px) {
         .product-view .product-photo .photo-zoom {
