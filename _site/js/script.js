@@ -74,7 +74,7 @@ $('.more').on('click', function(e){
 
 //    PRODUCT
 $('#plus').on('click', function(){
-  $('#product-image').css('transform', 'scale(2)');
+  $('#product-image').css('transform', 'scale(3) translate(25%, 25%)');
 });
 $('#minus').on('click', function(){
   $('#product-image').css('transform', 'scale(1)');

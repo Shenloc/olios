@@ -425,7 +425,7 @@ section {
 
 .product-view {
   display: flex; }
-  @media (max-width: 650px) {
+  @media (max-width: 770px) {
     .product-view {
       flex-direction: column; } }
   .product-view .product-photo {
@@ -436,21 +436,23 @@ section {
     margin-left: 50px;
     padding: 100px 70px;
     box-shadow: 3px 0 5px #c1c1c1;
-    overflow: hidden; }
-    @media (max-width: 650px) {
+    overflow: scroll; }
+    .product-view .product-photo::-webkit-scrollbar {
+      display: none; }
+    @media (max-width: 770px) {
       .product-view .product-photo {
         position: relative;
         width: 100%;
         margin-left: 0;
-        padding-left: 50px; } }
+        padding-left: 100px; } }
     .product-view .product-photo img {
       width: 100%;
       height: auto;
       display: block; }
     .product-view .product-photo .like {
-      position: absolute;
+      position: fixed;
       top: 20px;
-      right: 20px;
+      left: 505px;
       display: flex; }
       .product-view .product-photo .like p {
         margin-right: 10px;
@@ -464,11 +466,11 @@ section {
           top: 0;
           visibility: hidden; }
     .product-view .product-photo .photo-zoom {
-      position: absolute;
+      position: fixed;
       bottom: 20px;
-      left: 20px;
+      left: 70px;
       display: flex; }
-      @media (max-width: 650px) {
+      @media (max-width: 770px) {
         .product-view .product-photo .photo-zoom {
           left: 70px; } }
       .product-view .product-photo .photo-zoom img {
@@ -478,7 +480,7 @@ section {
   .product-view .product-desc {
     width: 60%;
     margin-left: 43.7%; }
-    @media (max-width: 650px) {
+    @media (max-width: 770px) {
       .product-view .product-desc {
         margin-left: 0;
         width: 100%;
@@ -528,7 +530,7 @@ section {
           justify-content: space-between;
           text-transform: uppercase;
           margin-top: 50px; }
-          @media (max-width: 650px) {
+          @media (max-width: 770px) {
             .product-view .product-desc .prod .prod-body .prod-options {
               display: block; } }
           .product-view .product-desc .prod .prod-body .prod-options .cost p:nth-of-type(2) {
@@ -543,7 +545,7 @@ section {
             vertical-align: super;
             margin-left: 10px;
             font-weight: 700; }
-          @media (max-width: 650px) {
+          @media (max-width: 770px) {
             .product-view .product-desc .prod .prod-body .prod-options .qty {
               margin: 20px 0 10px; } }
           .product-view .product-desc .prod .prod-body .prod-options .qty input {
