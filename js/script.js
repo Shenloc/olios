@@ -75,11 +75,7 @@ $('.more').on('click', function(e){
 //    PRODUCT
 $('#plus').on('click', function(){
   $('#product-image').css({
-    'transform': 'scale(3) translate(25%, 25%)',
-    'z-index': '10',
-    'position': 'fixed',
-    'top': '0',
-    'left': '0'
+    'transform': 'scale(3) translate(25%, 25%)'
   });
 });
 $('#minus').on('click', function(){
