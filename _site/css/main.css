@@ -148,9 +148,19 @@ header {
     .navbar .home-icon:hover, .navbar .basket-icon:hover, .navbar .search-icon:hover, .navbar .download-icon:hover {
       background-image: url("../img/icons/home-a.png"); }
   .navbar .basket-icon {
-    background-image: url("../img/icons/basket.png"); }
+    background-image: url("../img/icons/basket.png");
+    position: relative; }
     .navbar .basket-icon:hover {
       background-image: url("../img/icons/basket-a.png"); }
+    .navbar .basket-icon span {
+      padding: 2px 6px;
+      background-color: #0023ff;
+      color: #fff;
+      border-radius: 50%;
+      position: absolute;
+      top: -10px;
+      right: -5px;
+      display: none; }
   .navbar .search-icon {
     background-image: url("../img/icons/search.png"); }
     .navbar .search-icon:hover {

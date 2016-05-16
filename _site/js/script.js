@@ -88,3 +88,17 @@ $('#like').on('click', function(){
 $('#liked').on('click', function(){
   $('#liked').css('visibility', 'hidden');
 })
+
+
+// ADD TO CHART
+$('#add-to-chart').on('click', function() {
+  var cartValue = document.getElementById('qty').value;
+      cartSpan = document.getElementById('cartSpan');
+
+  if (cartValue >= 1) {
+    cartSpan.innerHTML = cartValue;
+    cartSpan.style.display = 'inline';
+  } else {
+    cartSpan.style.display = 'none';
+  }
+});

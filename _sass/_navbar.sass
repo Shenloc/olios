@@ -25,8 +25,20 @@
   .basket-icon
     @extend .home-icon
     background-image: url('../img/icons/basket.png')
+    position: relative
     &:hover
       background-image: url('../img/icons/basket-a.png')
+
+    span
+      padding: 2px 6px
+      background-color: #0023ff
+      color: #fff
+      border-radius: 50%
+      position: absolute
+      top: -10px
+      right: -5px
+      display: none
+
   .search-icon
     @extend .home-icon
     background-image: url('../img/icons/search.png')
